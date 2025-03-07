@@ -5,6 +5,7 @@ import Signup from "./box/Signup";
 import MainDashboard from "./box/MainDashboard";
 import UserDashboard from "./pages/user/UserDashboard"
 import AdminDashboard from "./pages/admin/AdminDashboard";
+import List from "./pages/admin/List";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/user" element={<UserDashboard />} />
           <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/list" element={<List />} />
         </Routes>
     </AuthProvider>
   );

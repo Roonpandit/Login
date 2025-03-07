@@ -15,6 +15,7 @@ const AdminDashboard = () => {
     <div>
       <h2>Admin Dashboard</h2>
       <button onClick={handleLogout}>Logout</button>
+      <button onClick ={()=> navigate("/list")}> List</button>
     </div>
   );
 };
