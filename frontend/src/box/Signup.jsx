@@ -8,7 +8,7 @@ const Signup = () => {
 
   const handleSignup = async () => {
     try {
-      await axios.post("https://login-8v77.onrender.com/auth/signup", user);
+      await axios.post("https://login-focv.onrender.com/auth/signup", user);
       alert("Signup successful! Please log in.");
       navigate("/login");
     } catch (err) {

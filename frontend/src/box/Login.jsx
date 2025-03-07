@@ -12,7 +12,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("https://login-8v77.onrender.com/auth/login", { email, password });
+      const res = await axios.post("https://login-focv.onrender.com/auth/login", { email, password });
 
       //  Extract values correctly
       const { accessToken, refreshToken, role, redirectPath } = res.data;
