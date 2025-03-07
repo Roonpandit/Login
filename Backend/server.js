@@ -8,7 +8,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: "https://login-demo-system.netlify.app",
+    origin: "*",
     credentials: true // ✅ Allow cookies, authentication tokens
   }));app.use(express.json());
 
@@ -16,7 +16,7 @@ app.use(cors({
 app.use('/auth', authRoutes);
 
 // Start server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 module.exports = app;
