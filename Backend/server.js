@@ -7,8 +7,10 @@ require('./src/config/db'); // Import and establish database connection
 const app = express();
 
 // Middleware
-app.use(cors({origin:"https://login-demo-system.netlify.app/"}));
-app.use(express.json());
+app.use(cors({
+    origin: "https://login-demo-system.netlify.app",
+    credentials: true // ✅ Allow cookies, authentication tokens
+  }));app.use(express.json());
 
 // Routes
 app.use('/auth', authRoutes);
