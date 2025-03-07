@@ -9,7 +9,6 @@ import AdminDashboard from "./pages/admin/AdminDashboard";
 function App() {
   return (
     <AuthProvider>
-      <Router>
         <Routes>
           <Route path="/" element={<MainDashboard />} />
           <Route path="/login" element={<Login />} />
@@ -17,7 +16,6 @@ function App() {
           <Route path="/user" element={<UserDashboard />} />
           <Route path="/admin" element={<AdminDashboard />} />
         </Routes>
-      </Router>
     </AuthProvider>
   );
 }
